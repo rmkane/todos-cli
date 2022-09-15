@@ -4,7 +4,7 @@ import { program } from 'commander';
 
 import {
   add, list, markDone, remove,
-} from './src/commands/index.js';
+} from './commands/index.js';
 
 program
   .command('list')

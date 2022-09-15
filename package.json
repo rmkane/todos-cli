@@ -2,7 +2,7 @@
   "name": "todos-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "./index.js",
+  "main": "./src/index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,7 +16,7 @@
     "conf": "^10.2.0"
   },
   "bin": {
-    "todos": "./index.js"
+    "todos": "./src/index.js"
   },
   "devDependencies": {
     "eslint": "^8.23.1",
