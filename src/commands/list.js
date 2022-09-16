@@ -7,7 +7,10 @@ const list = () => {
 
   if (todoList && todoList.length) {
     // User has tasks in todoList
-    log('Tasks in green are done. Tasks in yellow are still not done.', ['bold', 'blue']);
+    log('Tasks in green are done. Tasks in yellow are still not done.', [
+      'bold',
+      'blue',
+    ]);
     todoList.forEach((task, index) => {
       if (task.done) {
         log(`${index}. ${task.text}`, ['greenBright']);

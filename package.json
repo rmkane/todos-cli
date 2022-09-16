@@ -7,6 +7,8 @@
     "lint": "eslint src/** --ext .js",
     "lint-fix": "npm run lint -- --fix",
     "start": "node ./src/index.js",
+    "global-install": "npm install --global .",
+    "global-uninstall": "npm uninstall --global todos-cli",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ryan M. Kane",
@@ -15,7 +17,8 @@
   "dependencies": {
     "chalk": "^5.0.1",
     "commander": "^9.4.0",
-    "conf": "^10.2.0"
+    "conf": "^10.2.0",
+    "env-paths": "^2.2.1"
   },
   "bin": {
     "todos": "./src/index.js"
@@ -23,6 +26,8 @@
   "devDependencies": {
     "eslint": "^8.23.1",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0"
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1"
   }
 }
