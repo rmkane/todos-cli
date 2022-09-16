@@ -15,6 +15,7 @@
     "import/order": [
       "error",
       {
+        "newlines-between": "always",
         "groups": ["builtin", "external", "internal"],
         "alphabetize": { "order": "asc", "caseInsensitive": true }
       }

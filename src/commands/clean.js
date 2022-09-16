@@ -1,6 +1,8 @@
 import { existsSync, unlinkSync } from 'fs';
 import { join } from 'path';
+
 import envPaths from 'env-paths';
+
 import { loadJSON } from '../utils/io.js';
 import { log } from '../utils/logging.js';
 
