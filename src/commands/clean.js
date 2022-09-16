@@ -1,11 +1,10 @@
-import { existsSync, readFileSync, unlinkSync } from 'fs';
+import { existsSync, unlinkSync } from 'fs';
 import { join } from 'path';
 import envPaths from 'env-paths';
+import { loadJSON } from '../utils/io.js';
 import { log } from '../utils/logging.js';
 
-const { projectName } = JSON.parse(
-  readFileSync('configuration/properties.json')
-);
+const { projectName } = loadJSON('../../config/properties.json');
 
 const filename = 'config.json'; // Conf { configName, fileExtension } defaults
 
