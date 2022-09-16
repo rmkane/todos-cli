@@ -1,10 +1,13 @@
-import { existsSync, unlinkSync } from 'fs';
+import { existsSync, readFileSync, unlinkSync } from 'fs';
 import { join } from 'path';
 import envPaths from 'env-paths';
 import { log } from '../utils/logging.js';
 
-const projectName = 'todos-cli';
-const filename = 'config.json';
+const { projectName } = JSON.parse(
+  readFileSync('configuration/properties.json')
+);
+
+const filename = 'config.json'; // Conf { configName, fileExtension } defaults
 
 const clean = () => {
   try {

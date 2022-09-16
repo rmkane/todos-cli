@@ -12,6 +12,13 @@
   },
   "rules": {
     "import/extensions": "off",
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal"],
+        "alphabetize": { "order": "asc", "caseInsensitive": true }
+      }
+    ],
     "prettier/prettier": "error"
   },
   "plugins": ["prettier"]
