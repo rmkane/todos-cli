@@ -4,12 +4,11 @@ import envPaths from 'env-paths';
 import { loadJSON } from '../utils/io.js';
 import { log } from '../utils/logging.js';
 
-const { projectName } = loadJSON('../../config/properties.json');
-
 const filename = 'config.json'; // Conf { configName, fileExtension } defaults
 
 const clean = () => {
   try {
+    const { projectName } = loadJSON('../../config/properties.json');
     const config = join(envPaths(projectName).config, filename);
 
     if (existsSync(config)) {
